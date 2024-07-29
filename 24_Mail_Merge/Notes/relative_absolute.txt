@@ -1,0 +1,3 @@
+21_Snake_Game_Project\
+
+./my_file.txt then the ./ means look in the current folder
