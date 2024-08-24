@@ -1,0 +1,11 @@
+dir Env: in terminal to get environment variables
+
+How to create an environment variable:
+Say you want to create a new environment variable
+$ export variable_name = variable_content (ex. API_KEY)
+$ dir Env: 
+now you can see the environment variable 
+
+in python:
+import os
+api_key = os.environ.get("API_KEY")
