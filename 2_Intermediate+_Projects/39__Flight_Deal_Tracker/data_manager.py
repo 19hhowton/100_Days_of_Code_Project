@@ -11,7 +11,7 @@ class DataManager:
         response = requests.get(url="https://api.sheety.co/85f2b9b9a2bb548204ee85606ddff07e/flightDeals/prices")
         data = response.json()
         self.destination_data = data["prices"]
-        pprint.pprint(self.destination_data)
+        # pprint.pprint(self.destination_data)
         return self.destination_data
         
     def update_destination_codes(self):        

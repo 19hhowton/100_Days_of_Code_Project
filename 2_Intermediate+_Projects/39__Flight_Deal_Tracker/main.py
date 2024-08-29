@@ -7,14 +7,18 @@ from flight_search import FlightSearch
 from data_manager import DataManager
 
 flight_search = FlightSearch()
+flight_search.get_destination_code("Paris")
 flight_search.get_destination_code("Kuala Lumpur")
 
 data_manager = DataManager()
 destination_data = data_manager.get_destination_data()
 
-for obj in destination_data:
-    obj["iataCode"]
-print()
+# for obj in destination_data:
+#     city = obj["city"]
+#     print(city)
+#     print(flight_search.get_destination_code(city))
+    # obj["iataCode"]
+# print()
 
 # data_manager.update_destination_codes()
 
