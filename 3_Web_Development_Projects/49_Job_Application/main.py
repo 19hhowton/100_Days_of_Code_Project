@@ -18,23 +18,26 @@ driver = webdriver.Chrome()
 link = r"https://www.linkedin.com/jobs/search/?f_LF=f_AL&geoId=102257491&keywords=python%20developer&location=London%2C%20England%2C%20United%20Kingdom&redirect=false&position=1&pageNum=0"
 driver.get(link)
 
-signin_button_1 = driver.find_element(By.LINK_TEXT, value="Sign in")
-time.sleep(40)
-signin_button_1.click()
+try:
+  cancel_button = driver.find_element(By.CLASS_NAME, value="modal__dismiss").click()
+except:
+  pass
+finally: 
+  signin_button_1 = driver.find_element(By.LINK_TEXT, value="Sign in").click()
+  email_txtbox = driver.find_element(By.ID, value="username").send_keys(f"{username}")
+  password_txtbox = driver.find_element(By.ID, value="password").send_keys(f"{password}")
+  signin_button_2 = driver.find_element(By.CLASS_NAME, value="from__button--floating").click()
 
-email_txtbox = driver.find_element(By.ID, value="username")
-email_txtbox.send_keys(f"{username}")
+  job_list = driver.find_elements(By.CLASS_NAME, value="jobs-search-results__list-item")
+  for job in job_list:
+    job.click()
+    
+    time.sleep(1)
+    save_button = driver.find_element(By.CLASS_NAME, value="jobs-save-button")
 
-password_txtbox = driver.find_element(By.ID, value="password")
-password_txtbox.send_keys(f"{password}")
+    time.sleep(1)
+    save_button.click()
 
-signin_button_2 = driver.find_element(By.CLASS_NAME, value="from__button--floating")
-signin_button_2.click()
-
-time.sleep(10)
-
-save_button = driver.find_element(By.CLASS_NAME, value="jobs-save-button")
-save_button.click()
 
 time.sleep(100)
 
