@@ -30,16 +30,17 @@ finally:
 
   job_list = driver.find_elements(By.CLASS_NAME, value="jobs-search-results__list-item")
   for job in job_list:
+    time.sleep(.2)
     job.click()
     
-    time.sleep(1)
+    time.sleep(.2)
     save_button = driver.find_element(By.CLASS_NAME, value="jobs-save-button")
 
-    time.sleep(1)
+    time.sleep(.2)
     save_button.click()
 
 
-time.sleep(100)
+# time.sleep(100)
 
 
 
