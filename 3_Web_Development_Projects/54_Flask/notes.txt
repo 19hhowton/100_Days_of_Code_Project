@@ -1,0 +1,17 @@
+These 6 steps got my app up and running. 
+
+No "FLASK_APP" environment variable used :) 
+
+See below: 
+
+PS C:\Users\<user>\100_Days_of_Code_Project\3_Web_Development_Projects\54_Flask> pip install virtualenv
+
+PS C:\Users\<user>\100_Days_of_Code_Project\3_Web_Development_Projects\54_Flask> python -m virtualenv venv
+
+PS C:\Users\<user>\100_Days_of_Code_Project\3_Web_Development_Projects\54_Flask> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+PS C:\Users\<user>\100_Days_of_Code_Project\3_Web_Development_Projects\54_Flask> venv\Scripts\activate
+
+(venv) PS C:\Users\<user>\100_Days_of_Code_Project\3_Web_Development_Projects\54_Flask> pip install flask
+
+(venv) PS C:\Users\<user>\100_Days_of_Code_Project\3_Web_Development_Projects\54_Flask> flask run

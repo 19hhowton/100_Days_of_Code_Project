@@ -1,0 +1,6 @@
+decorators add functionality to the function below. 
+It's perfect for when you want to add more characteristics.
+ex:
+* run the below function multiple times
+* add a time delay to multiple functions
+* add a series of steps to a function
