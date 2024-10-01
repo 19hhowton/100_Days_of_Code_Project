@@ -1,0 +1,30 @@
+https://appbrewery.github.io/bootstrap-layout/
+
+
+https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+Adjust the width of the screen via Inspect->computer phone icon in the corner, adjust as you like
+
+Exercise 1
+<!-- Modify the HTML code for the purple boxes below so it behaves like the green ones. -->
+<div class="row">
+<div class="col-sm-12 col-lg-12 col-xl">50% desktop, 100% mobile</div>
+<div class="col-sm-12 col-lg-12 col-xl">50% desktop, 100% mobile</div>
+</div>
+
+Exercise 2
+<!-- Modify the HTML below to make the blue boxes behave like the red ones. -->
+<div class="row">
+<div class="col-sm-12 col-lg-6">Column 1</div>
+<div class="col-sm-6 col-lg-3">Column 2</div>
+<div class="col-sm-6 col-lg-3">Column 3</div>
+</div>
+
+Exercise 3
+<!-- Modify the HTML below to make the indigo boxes behave like the blue ones. -->
+<div class="row">
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-2 col-xxl-1">Column 1</div>
+<div class="col-sm-12 col-md col-lg-8 col-xl-10 col-xxl">Column 2</div>
+</div>
+          
+            
