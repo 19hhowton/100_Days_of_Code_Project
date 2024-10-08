@@ -1,16 +1,8 @@
 from flask import Flask, render_template, redirect
-from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, PasswordField
-from wtforms.validators import InputRequired, Email, Length
+from forms import LoginForm
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "this is my secret"
-
-
-class LoginForm(FlaskForm):
-    email = StringField("Email: ", validators=[InputRequired(), Email()])
-    password = PasswordField("Password: ", validators=[InputRequired(), Length(min=8)])
-    submit = SubmitField("Submit")
 
 @app.route("/", methods=['GET', 'POST'])
 def login():
