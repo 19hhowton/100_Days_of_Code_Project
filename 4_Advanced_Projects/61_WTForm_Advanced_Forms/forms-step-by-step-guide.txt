@@ -1,0 +1,23 @@
+
+pip install Flask-WTF
+pip install bootstrap-flask
+
+- create a secret key
+
+- create a form class which includes all the different fields you would want the form to have
+    - for each field you want to have a label and validators for the field 
+
+for a form you get or post. 
+    you "get" a webpage from the backend 
+    and 
+    you "post" a form to the backend
+- create a route 
+    - all attribute of class should = None
+    - create an instance of the form class you want
+    - 
+- in html 
+    - for post create form
+        - create csrf token via hidden_tag() 
+
+
+pip install email_validator

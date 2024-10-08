@@ -8,7 +8,29 @@
         <div class="container">
 			<h1>Welcome</h1>
 			<p>Are you ready to discover more!</p>
-			<button type="button">Login</button>
+			<h2>Login</h2>
+			<form 
+				method="POST"
+				action="{{ url_for('login') }}"
+				novalidate>
+				
+				{{ login_form.hidden_tag() }}
+				<p>
+					{{ login_form.email.label }} <br>
+					{{ login_form.email(size=30) }}
+					{% for err in login_form.email.errors %}
+						<span style="color:red">{{ err }}</span>
+					{% endfor %}
+				</p>
+				<p>
+					{{ login_form.password.label }} <br>
+					{{ login_form.password(size=30) }}
+					{% for err in login_form.password.errors %}
+						<span style="color:red">{{ err }}</span>
+					{% endfor %}
+				</p>
+				{{ login_form.submit }}
+			</form>
         </div>
 	</body>
 </html>
