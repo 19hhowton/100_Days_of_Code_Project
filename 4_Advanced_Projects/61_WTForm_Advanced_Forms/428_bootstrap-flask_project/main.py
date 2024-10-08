@@ -1,8 +1,11 @@
 from flask import Flask, render_template, redirect
+from flask_bootstrap import Bootstrap5
 from forms import LoginForm
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "this is my secret"
+
+bootstrap = Bootstrap5(app)
 
 @app.route("/", methods=['GET', 'POST'])
 def login():

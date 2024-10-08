@@ -21,3 +21,5 @@ for a form you get or post.
 
 
 pip install email_validator
+pip install bootstrap-flask
+
