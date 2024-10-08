@@ -18,10 +18,11 @@ def login():
     password = None
     login_form = LoginForm()
     if login_form.validate_on_submit():
-        if login_form.email.data == "admin@email.com" and login_form.password.data == "12345678":
-            return redirect('/success')
+        if login_form.email.data == "admin@email.com" \
+            and login_form.password.data == "12345678":
+            return render_template('success.html')
         else:
-            return redirect('/denied')
+            return render_template('denied.html')
     return render_template("login.html", login_form = login_form)
 
 @app.route("/success")
