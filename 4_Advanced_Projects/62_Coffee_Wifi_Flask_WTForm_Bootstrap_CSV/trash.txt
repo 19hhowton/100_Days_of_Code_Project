@@ -1,0 +1,59 @@
+for each row (get each row) ['Cafe Name', 'Location', 'Open', 'Close', 'Coffee', 'Wifi', 'Power']
+  place each item in the row
+  row[0]
+  row[1]
+  row[2]
+  row[3]
+
+    create list = [] of all data returned 
+    append that row to the csv
+
+        row_list.append(form.url.data)
+        row_list.append(form.open_time.data)
+        row_list.append(form.close_time.data)
+        row_list.append(form.coffee_rating.data )
+        row_list.append(form.wifi_rating.data )
+        row_list.append(form.power_rating.data )
+        print(row_list)
+    
+    <table class="table table-light table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Cafe Name</th>
+          <th scope="col">Location</th>
+          <th scope="col">Open</th>
+          <th scope="col">Close</th>
+          <th scope="col">Coffee</th>
+          <th scope="col">Wifi</th>
+          <th scope="col">Power</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Lighthaus</th>
+          <td>
+            <a href="http://example.com">
+              Maps Link
+            </a>
+          </td>
+          <td>11am</td>
+          <td>3:30PM</td>
+          <td>☕☕☕</td>
+          <td>💪💪</td>
+          <td>🔌🔌🔌🔌</td>
+        </tr>
+        <tr>
+          <th scope="row">Esters</th>
+          <td>
+            <a href="http://example.com">
+              Maps Link
+            </a>
+          </td>
+          <td>8AM</td>
+          <td>3PM</td>
+          <td>☕☕</td>
+          <td>💪💪💪💪</td>
+          <td>🔌🔌🔌</td>
+        </tr>
+      </tbody>
+  	  </table>
