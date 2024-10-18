@@ -22,3 +22,5 @@ add form as output to html
 set up form output structure in main    
         if form.validate_on_submit():
             form.name.data
+
+create book schema 

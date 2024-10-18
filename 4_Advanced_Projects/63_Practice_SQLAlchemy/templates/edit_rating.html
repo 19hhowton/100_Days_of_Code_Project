@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Coffee and Wifi{% endblock %}
+{% from 'bootstrap5/form.html' import render_form %}
+{% block content %}
+<div class="jumbotron text-center">
+  <h1>My Library</h1>
+  
+
+    <p>
+      {% if books %}
+        {% for book in books %}
+          {% if book['id']|int == book_id|int %}
+            <p>Book Name: {{ book["title"] }}</p>
+            <p>Book Name: {{ book["author"] }}</p>
+            <p>Current Rating: {{ book["rating"] }}</p>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </p>
+
+    {{ render_form(form) }}
+
+</div>
+
+{% endblock %}
