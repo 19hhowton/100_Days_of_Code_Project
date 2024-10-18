@@ -1,0 +1,24 @@
+create virtual environment
+
+set up bootstrap 
+- Bootstrap5(app)
+- in base.html {{ bootstrap.load_css() }}
+
+add in the routing
+create form as a class 
+    from flask_wtf import FlaskForm
+    from wtforms import StringField, SubmitField, SelectField
+    from wtforms.validators import DataRequired, URL, Length
+
+    class CafeForm(FlaskForm):
+        cafe = StringField('Cafe Name', validators=[DataRequired(), Length(max=20)])
+add form to html  {{ render_form(form) }}
+
+create a secret key in main.py
+    app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+
+add form as output to html
+
+set up form output structure in main    
+        if form.validate_on_submit():
+            form.name.data

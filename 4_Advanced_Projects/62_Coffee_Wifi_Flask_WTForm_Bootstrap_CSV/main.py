@@ -32,10 +32,11 @@ def add_cafe():
         row_str = row_str + f",{form.coffee_rating.data}"
         row_str = row_str + f",{form.wifi_rating.data}"
         row_str = row_str + f",{form.power_rating.data}"
-        print(row_str)
 
         with open('cafe-data.csv', 'a', newline='', encoding='utf-8') as csv_file:
             csv_file.write(row_str)
+        
+        ### run cafes function or just have a successful submission html page
 
     # Exercise:
     # Make the form write a new row into cafe-data.csv

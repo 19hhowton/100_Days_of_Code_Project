@@ -14,4 +14,7 @@ PS C:\Users\<user>\100_Days_of_Code_Project\3_Web_Development_Projects\54_Flask>
 
 (venv) PS C:\Users\<user>\100_Days_of_Code_Project\3_Web_Development_Projects\54_Flask> pip install flask
 
-(venv) PS C:\Users\<user>\100_Days_of_Code_Project\3_Web_Development_Projects\54_Flask> flask run
+(venv) PS C:\Users\<user>\100_Days_of_Code_Project\3_Web_Development_Projects\54_Flask> flask run 
+
+
+pip3 install -r requirements.txt
